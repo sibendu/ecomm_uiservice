@@ -1,0 +1,15 @@
+{
+    "name": "hello-node",
+    "version": "0.0.0",
+    "description": "hello-node",
+    "main": "server.js",
+    "author": "sibendu.das@gmail.com",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "ejs": "^3.1.2",
+        "express": "latest",
+        "request": "^2.88.2"
+    }
+}

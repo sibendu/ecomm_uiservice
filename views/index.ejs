@@ -1,0 +1,36 @@
+<html>
+   <body>
+      <br/>
+      <% if (order != null) { %>
+      		<b>Order created successfully - <%= order %></b><br/><br/><br/>
+      <%  }else{  %> 
+		<b><%= message %> 
+      <%  }  %>
+      <form action = "/order" method = "POST">
+         <table>
+		<tr>
+			<td>Item</td>
+			<td><input type = "text" name = "item" value=""></td>
+		</tr>
+		<tr>
+			<td>Quantity</td>
+			<td><input type = "text" name = "quantity"  value=""></td>
+		</tr>
+		<tr>
+			<td>Price</td>
+			<td><input type = "text" name = "price"  value=""></td>
+		</tr>
+		<tr>
+			<td>Remarks</td>
+			<td><input type = "text" name = "remarks"  value=""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>         <input type = "submit" value = "Submit"></td>
+		</tr>
+         </table> 
+ 	
+      </form>
+      
+   </body>
+</html>
