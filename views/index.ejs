@@ -7,29 +7,91 @@
 		<b><%= message %> 
       <%  }  %>
       <form action = "/order" method = "POST">
+
+<!--
          <table>
 		<tr>
-			<td>Item</td>
-			<td><input type = "text" name = "item" value=""></td>
+			<td>Product</td>
+			<td>
+				<select name="item">
+  					<option value="860322">Holter recorder: Monitoring DigiTrak XT</option>
+  					<option value="861304">HeartStart FRx Automated external defibrillator</option>
+  					<option value="DSX200S11">DreamStation CPAP</option>
+ 					<option value="1054260B">Trilogy100 Ventilator</option>
+				</select>
+			</td> 
 		</tr>
 		<tr>
 			<td>Quantity</td>
-			<td><input type = "text" name = "quantity"  value=""></td>
+			<td><input type = "text" name = "quantity"  value="1"></td>
 		</tr>
 		<tr>
 			<td>Price</td>
-			<td><input type = "text" name = "price"  value=""></td>
+			<td><input type = "text" name = "price"  value="500$"></td>
 		</tr>
 		<tr>
 			<td>Remarks</td>
-			<td><input type = "text" name = "remarks"  value=""></td>
+			<td><input type = "textarea" name = "remarks"  value="Need asap. Please ship to standards address"></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td>         <input type = "submit" value = "Submit"></td>
+			<td>         <input type = "submit" value = Send Order"></td>
 		</tr>
          </table> 
- 	
+ -->	
+	<br/>
+	<table>	
+		<tr>
+			<td>Customer</td>
+			<td><input type = "text"  name = "customer"  value="Riverbed Medical Center"></td>
+		</tr>
+	</table>
+	<br/>
+	<table>
+		<tr>
+			<td>Product</td>
+			<td>Quantity</td>
+		</tr>
+		<tr>
+			<td>
+				<select name="item">
+  					<option value="860322">860322 : Holter recorder Monitoring DigiTrak XT</option>
+  					<option value="861304">861304: HeartStart FRx Automated external defibrillator</option>
+  					<option value="DSX200S11">DSX200S11: DreamStation CPAP</option>
+ 					<option value="1054260B">1054260B: Trilogy100 Ventilator</option>
+				</select>
+			</td> 
+			<td><input type = "text" name = "quantity"  value="1"></td>
+		</tr>
+		<tr>
+			<td>
+				<select name="item">
+  					<option value="860322">860322 : Holter recorder Monitoring DigiTrak XT</option>
+  					<option value="861304">861304: HeartStart FRx Automated external defibrillator</option>
+  					<option value="DSX200S11">DSX200S11: DreamStation CPAP</option>
+ 					<option value="1054260B">1054260B: Trilogy100 Ventilator</option>
+				</select>
+			</td> 
+			<td><input type = "text" name = "quantity"  value="1"></td>
+		</tr>
+	</table>
+	<br/><br/>
+	<table>	
+		<tr>
+			<td>Price</td>
+			<td><input type = "text" name = "price"  value="5000$"></td>
+		</tr>
+		<tr>
+			<td>Remarks</td>
+			<td><input type = "textarea" name = "remarks" row="5" cols="100" value="Need asap. Please ship to standards address"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>         <input type = "submit" value = Send Order"></td>
+		</tr>
+	</table>
+	
+
       </form>
       
    </body>

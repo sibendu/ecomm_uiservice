@@ -20,12 +20,24 @@ app.post('/order', urlencodedParser, function (req, res) {
 
    // Prepare output in JSON format
    payload = {
-      item:req.body.item,
-      quantity:req.body.quantity,
+      customer: req.body.customer,	
+      items: [
+      	{
+		code:req.body.item[0],
+      		quantity:req.body.quantity[0],
+	},
+	{
+		code:req.body.item[1],
+      		quantity:req.body.quantity[1],
+	}
+      ],	
       price: req.body.price,
       remarks: req.body.remarks	
    };
-   console.log(payload); 	
+
+   console.log(payload); 		
+   console.log(req.body.item + '  ::: '+req.body.quantity); 
+	
    console.log('ORDER_SERVICE_URL : '+ORDER_SERVICE_URL); 	
    request.post({
     	"headers": { "content-type": "application/json" },

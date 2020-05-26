@@ -18,7 +18,7 @@ spec:
           protocol: TCP
         env:
         - name: ORDER_SERVICE_URL
-          value: "http://orderservice.ecomm1.svc.cluster.local:8080/order/"
+          value: "http://orderservice:8080/order/"
 ---
 kind: Service
 apiVersion: v1
